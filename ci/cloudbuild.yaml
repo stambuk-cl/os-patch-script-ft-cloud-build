@@ -1,0 +1,9 @@
+steps:
+  # Step 1: Create and execute the script for the OS patch
+
+  - name: "gcr.io/cloud-builders/gcloud"
+    entrypoint: bash
+    args: ['./script.sh']
+
+options:
+  logging: CLOUD_LOGGING_ONLY
